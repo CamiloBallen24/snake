@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+.board {
+    width: 625px;
+    width: 625px;
+    background: "#F4F4F4";
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 25px;
+    height: 25px;
+    background: #F4F4F4;
+    border: 1px solid #999666;
+}
+
+.cell-snake {
+    width: 25px;
+    height: 25px;
+    background: #31d276;
+}
+
+.cell-snake-head {
+    width: 25px;
+    height: 25px;
+    background: #927f00;
+    border: 1px solid #999666;
+}
+
+.cell-prize {
+    width: 25px;
+    height: 25px;
+    background: #e71979;
+    border: 1px solid #999666;
+}
