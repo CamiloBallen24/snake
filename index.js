@@ -9,13 +9,13 @@ board = document.getElementById("board")
 
 
 
-for(let i=0; i<num_cells; i++){
-    for(let j=0; j<num_cells; j++){
-        let cell_ij =  document.createElement('div');
-        cell_ij.classList.add("cell");
-        cells.push(cell_ij);
-        board.appendChild(cell_ij);
-    }
+for(let i=0; i<num_cells*num_cells; i++){
+    let cell_i =  document.createElement('div');
+    if (i%2 == 0) cell_i.classList.add("cell-one");
+    if (i%2 == 1) cell_i.classList.add("cell-two");
+    cells.push(cell_i);
+    board.appendChild(cell_i);
+    
 }
 
 
@@ -25,7 +25,7 @@ prize = 30
 
 
 
-flag_key_active = true
+flag_key_active =   true
 
 document.addEventListener('keydown', (event) => {
     
@@ -46,7 +46,8 @@ document.addEventListener('keydown', (event) => {
 
 
 function drawnBoard(){
-    cells.forEach(cell => cell.className = "cell");
+    cells_class_types = ["cell-one", "cell-two"]
+    cells.forEach( (cell,index) => cell.className = cells_class_types[index%2]);
     cells[snake[0]].className = "cell-snake-head";
     
     for(let i=1; i< snake.length; i++)        

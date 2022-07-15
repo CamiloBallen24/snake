@@ -10,29 +10,32 @@
     flex-wrap: wrap;
 }
 
-.cell {
+.cell-one {
     width: 25px;
     height: 25px;
-    background: #F4F4F4;
-    border: 1px solid #999666;
+    background: #aad751;
+}
+
+.cell-two {
+    width: 25px;
+    height: 25px;
+    background: #a2d149;
 }
 
 .cell-snake {
     width: 25px;
     height: 25px;
-    background: #31d276;
+    background: #4774ea;
 }
 
 .cell-snake-head {
     width: 25px;
     height: 25px;
-    background: #927f00;
-    border: 1px solid #999666;
+    background: #ffffff;
 }
 
 .cell-prize {
     width: 25px;
     height: 25px;
-    background: #e71979;
-    border: 1px solid #999666;
+    background: #e7471d;
 }
